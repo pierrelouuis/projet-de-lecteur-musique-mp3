@@ -20,7 +20,7 @@ def Liste() :
 
 def Exit() : #Ferme la page
     Mafenetre.destroy()
-    pygame.mixer.music.pause() #Sinon musique ne se stop pas
+    pygame.mixer.music.pause()
      
 def Lecture():
     pygame.mixer.music.play()
@@ -37,7 +37,7 @@ def Vol() :
     pygame.mixer.music.set_volume(vol1*.01) #donne valeur a variable
     
 def Mute():  
-    Buttonvolume.set(0) # Mute
+    Buttonvolume.set(0) 
  
 def Fermer():
     pygame.mixer.music.stop()
@@ -51,6 +51,7 @@ Mafenetre.title('Morpheo Musique')
 Mafenetre.after(100,Vol) #Rafraichi valeur volume
 
 #definition de l'arriere plan
+
 photo = PhotoImage(file="picturemusic.jpg")
 Largeur=500
 Hauteur=300
@@ -73,6 +74,7 @@ filemenu.add_command(label="Fermer", command=Exit)
 menubar.add_cascade(label="Fichier", menu=filemenu)
 
 #curseur volume
+
 Buttonvolume=scale(Mafenetre, from_=100, to=0,fg='yellow', bg='black', variable=Vol)
 Buttonvolume.set(50)
 Buttonvolume.pack(side = LEFT, padx = 15, pady = 15)
@@ -103,8 +105,6 @@ BoutonUnpause.pack(side = LEFT, padx = 10, pady = 10)
 listbox = Listbox(Mafenetre, width=10)
 listbox.insert(0,"PLAYLIST: ")
 listbox.pack(side = RIGHT, padx = 10, pady = 10)
-
-Mafenetre.mainloop()
 
 #cadre musique
 
