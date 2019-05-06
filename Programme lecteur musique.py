@@ -90,7 +90,7 @@ pygame.mixer.music.load('MIBD.mp3') #musique d'ouverture
 
 #reglage des differents boutons
 
-Play = PhotoImage(file="boutonplay.jpeg")
+Play = PhotoImage(file="boutonplay.png")
 BoutonLecture = Button(Mafenetre, text = 'Lecture', command = Lecture, fg='blue', bg='black', image=play)
 BoutonLecture.pack(side=LEFT, padx = 10, pady = 10)
 
