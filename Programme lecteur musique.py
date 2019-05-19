@@ -42,7 +42,7 @@ def Fermer():
 
   #  Interface graphique
 Mafenetre = Tk ()
-Mafenetre.geometry('600x500+400+400')
+Mafenetre.geometry('1080x720')
 Mafenetre.configure(bg='black')
 Mafenetre.title('Morpheo Musique')
 Mafenetre.after(100,Vol) #Rafraichi valeur volume
